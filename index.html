@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2 {
+            font-family: 'Lora', serif;
+        }
+        h3 {
+             font-family: "Playfair Display";
+        }
+    </style>
+</head>
+<body class="bg-zinc-700 text-white">
+    <section>
+        <header class="w-full h-96 bg-[url('assets/imgs/theworld.jpg')] bg-cover flex items-top pt-10 justify-center">
+            <h1 class="text-5xl font-bold text-center p-4">My Favorite Movies</h1>
+        </header>
+        <div class="max-w-4xl mx-auto p-6">
+            <p class="text-lg mb-6">Suelo ver muchas películas de acción y de romance, pero estas 3 películas son las que a lo largo de mi vida más perduraron en mi memoria y fueron relevantes en mi opinión a nivel cine mundial.</p>
+
+            <h2 class="text-2xl font-semibold mb-4">Lista de Películas</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-4 shadow-lg">
+                    <h3 class="text-xl font-bold">Scarface</h3>
+                    <img src="assets/imgs/tony-cigarro.jpg" alt="Película 1" class="w-full h-48 object-cover rounded-md mt-2">
+                    <p class="mt-2">Antonio «Tony» Montana es un expresidiario cubano que llega a los Estados Unidos durante el éxodo de Mariel en mayo de 1980. Junto a su mejor amigo, Manolo «Manny» Ribera, son recluidos en Cayo Hueso con el resto de los demás refugiados cubanos a la espera de una resolución política. Sé fiel a ti mismo y no faltes a tu palabra por nadie. Tony Montana tenía muchos defectos que finalmente lo llevaron a la muerte, pero aún tenía una gran cualidad: <strong>"en una vida de delincuencia, siempre se mantuvo fiel a sus promesas y cumplió su palabra."</strong></p>
+                    <p class="mt-2">Valoración: 9/10</p>
+                </div>
+                <div class="bg-gray-800 p-4 shadow-lg">
+                    <h3 class="text-xl font-bold">Hasta El Último Hombre</h3>
+                    <img class="h-90 w-full mt-3" src="assets/imgs/heuh.jpg" alt="Película 2" class="w-full h-48 object-cover rounded-md mt-2">
+                    <p class="mt-2">Esta es la historia de Desmond T. Doss, un hombre contrario a la violencia que combatió como médico en la Segunda Guerra Mundial sin portar un arma. No disparó ni una bala, pero salvó a 75 personas de la muerte en la batalla de la isla de Okinawa. Gracias a su coraje, pasó de ser el objeto de las burlas de sus compañeros a ser reconocido por su enorme valía con la entrega de la <strong>Medalla de Honor del Congreso, otorgada por primera vez a un objetor de conciencia.</strong></p>
+                    <p class="mt-2">Valoración: 8/10</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Fast and   Furious 4</h3>
+                    <img src="assets/imgs/paul-walker-skiline.jpg" alt="Película 3" class="w-full h-48 object-cover rounded-md mt-2">
+                    <p class="mt-2"><strong>El ex convicto Dominic Toretto se une a su viejo adversario, Brian O'Conner</strong>, que ahora trabaja para el FBI en Los Ángeles, con el fin de infiltrarse en una organización criminal que se dedica a introducir heroína en la ciudad.</p>
+                    <p class="mt-2">Valoración: 10/10</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-semibold mt-10 mb-4">Recomendaciones</h2>
+            <ul class="list-disc list-inside mb-6">
+                <li>El Padrino</li>
+                <li>El Irlandés</li>
+                <li>Fast & Furious 5</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mb-4">Sugerencias</h2>
+            <form class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <label for="comment" class="block text-sm font-medium">Déjanos tu comentario o sugerencia:</label>
+                <textarea id="comment" rows="4" class="mt-1 block w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-white" placeholder="Escribe aquí..."></textarea>
+                <button type="submit" class="mt-4 w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 rounded">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
